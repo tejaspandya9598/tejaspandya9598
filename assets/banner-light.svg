@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Tejas Pandya: quantitative research, derivatives pricing, low-latency C++">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Tejas Pandya: quantitative research, trading, development and risk">
 <style>
 .curve{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 1.6s ease-out .2s forwards}
 .q{opacity:0;animation:fade .4s ease-out forwards}
@@ -13,7 +13,7 @@
 <circle cx="700.0" cy="52.8" r="3.2" fill="#d97706" class="q" style="animation-delay:0.90s"/><circle cx="737.5" cy="63.7" r="3.2" fill="#d97706" class="q" style="animation-delay:0.96s"/><circle cx="775.0" cy="78.5" r="3.2" fill="#d97706" class="q" style="animation-delay:1.02s"/><circle cx="812.5" cy="83.4" r="3.2" fill="#d97706" class="q" style="animation-delay:1.08s"/><circle cx="850.0" cy="94.8" r="3.2" fill="#d97706" class="q" style="animation-delay:1.14s"/><circle cx="887.5" cy="99.5" r="3.2" fill="#d97706" class="q" style="animation-delay:1.20s"/><circle cx="925.0" cy="101.4" r="3.2" fill="#d97706" class="q" style="animation-delay:1.26s"/><circle cx="962.5" cy="107.3" r="3.2" fill="#d97706" class="q" style="animation-delay:1.32s"/><circle cx="1000.0" cy="103.9" r="3.2" fill="#d97706" class="q" style="animation-delay:1.38s"/><circle cx="1037.5" cy="105.2" r="3.2" fill="#d97706" class="q" style="animation-delay:1.44s"/><circle cx="1075.0" cy="98.4" r="3.2" fill="#d97706" class="q" style="animation-delay:1.50s"/><circle cx="1112.5" cy="92.3" r="3.2" fill="#d97706" class="q" style="animation-delay:1.56s"/><circle cx="1150.0" cy="86.2" r="3.2" fill="#d97706" class="q" style="animation-delay:1.62s"/>
 <text x="1150" y="30" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#59636e">implied vol vs strike · order-book depth</text>
 <text x="56" y="104" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="50" font-weight="700" letter-spacing="1" fill="#1f2328">Tejas Pandya</text>
-<text x="58" y="146" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="21" fill="#0891b2">Quant research · Derivatives pricing · Low-latency C++</text>
+<text x="58" y="146" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="21" fill="#0891b2">Quant research · Trading · Development · Risk</text>
 <text x="58" y="186" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="15" fill="#59636e">MS Financial Engineering, NYU Tandon (May 2027)</text>
 <text x="58" y="210" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="15" fill="#59636e">3 years in market risk at Nomura: VaR, FRTB, P&amp;L attribution</text>
 </svg>

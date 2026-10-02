@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Tejas Pandya: quant research, derivatives pricing, low-latency C++" width="100%">
+  <img src="assets/banner-light.svg" alt="Tejas Pandya: quant research, trading, development and risk" width="100%">
 </picture>
 
 <p align="center">
@@ -21,8 +21,9 @@
 I'm a financial engineering student at NYU Tandon (MS, May 2027, GPA 3.8) after three
 years in market risk at Nomura, where I ran VaR and sensitivity models in production,
 built the P&L and market-data reconciliation pipelines, and worked on Basel 2.5 / FRTB
-submissions. The repos below are the research side: signals, pricing, execution, and
-the C++ underneath.
+submissions. I'm looking for a full-time quant role, whether that's research, trading,
+development or risk, and the repos below cover all four: alpha signals and backtests,
+execution and market making, derivatives pricing and risk, and low-latency C++.
 
 **On the numbers.** Every figure on this page comes from a run I can repeat, and each
 README names the command that produces it. In October 2026 I re-read every repo line by
@@ -80,4 +81,4 @@ licence allows, so it runs offline.
   <img src="https://img.shields.io/badge/Bloomberg-Terminal-000000?style=for-the-badge" alt="Bloomberg">
 </p>
 
-<p align="center"><i>Looking for full-time quant research, trading, development and risk roles from mid-2027.</i></p>
+<p align="center"><i>Open to any full-time quant role from mid-2027: research, trading, development, risk, or quant analytics. US and India.</i></p>
