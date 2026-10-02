@@ -37,33 +37,33 @@ are fixed, and the numbers moved. The commit history has the details.
 
 | Project | What it does | Stack |
 |---|---|---|
-| **[equity-xs-alpha](https://github.com/6ixE11even/equity-xs-alpha)** | Six signals on 494 S&P names → rank IC with Newey-West t-stats → cost-aware quintile portfolios → LightGBM combo under purged walk-forward CV. OOS net Sharpe **0.77** vs **−0.58** for the naive equal-weight baseline | Python · LightGBM |
-| **[stat-arb-backtester](https://github.com/6ixE11even/stat-arb-backtester)** | Event-driven pairs backtester on live Deribit crypto. Selection and hedge ratios fitted in-sample only, Benjamini-Hochberg across all 15 pairwise tests — under which **no pair survives**, and the surviving set moves with the training window | Python |
-| **[macro-regime-allocation](https://github.com/6ixE11even/macro-regime-allocation)** | PCA + two-step K-Means on 120+ FRED-MD indicators feeding mean-variance allocation, every signal lagged by the publication delay. **11.2%/yr vs 5.6%** for equal weight in MSCI developed; the cost-aware convex book holds Sharpe 0.51–0.68 across a 0–100bps sweep | Python · cvxpy |
-| **[prediction-markets](https://github.com/6ixE11even/prediction-markets)** | Live Polymarket scanner for cross-outcome arbitrage in neg-risk events, netted against the quoted spread. Most of the headline edge on long-dated political baskets turns out to be the discount rate | Python |
+| **[equity-xs-alpha](https://github.com/tejaspandya9598/equity-xs-alpha)** | Six signals on 494 S&P names → rank IC with Newey-West t-stats → cost-aware quintile portfolios → LightGBM combo under purged walk-forward CV. OOS net Sharpe **0.77** vs **−0.58** for the naive equal-weight baseline | Python · LightGBM |
+| **[stat-arb-backtester](https://github.com/tejaspandya9598/stat-arb-backtester)** | Event-driven pairs backtester on live Deribit crypto. Selection and hedge ratios fitted in-sample only, Benjamini-Hochberg across all 15 pairwise tests — under which **no pair survives**, and the surviving set moves with the training window | Python |
+| **[macro-regime-allocation](https://github.com/tejaspandya9598/macro-regime-allocation)** | PCA + two-step K-Means on 120+ FRED-MD indicators feeding mean-variance allocation, every signal lagged by the publication delay. **11.2%/yr vs 5.6%** for equal weight in MSCI developed; the cost-aware convex book holds Sharpe 0.51–0.68 across a 0–100bps sweep | Python · cvxpy |
+| **[prediction-markets](https://github.com/tejaspandya9598/prediction-markets)** | Live Polymarket scanner for cross-outcome arbitrage in neg-risk events, netted against the quoted spread. Most of the headline edge on long-dated political baskets turns out to be the discount rate | Python |
 
 ### 🧮 Derivatives pricing & rates
 
 | Project | What it does | Stack |
 |---|---|---|
-| **[sofr-swap-pnl-attribution](https://github.com/6ixE11even/sofr-swap-pnl-attribution)** | SOFR curve bootstrap, $255M ten-swap 2–30y book, daily P&L split into carry / roll-down / level / slope / curvature via key-rate durations. Par swaps reprice to **<1e-9**, attribution reconciles to full revaluation | Python |
-| **[sabr-vol-calibration](https://github.com/6ixE11even/sabr-vol-calibration)** | SABR (Hagan) calibrated to live Deribit BTC smiles: **0.43 vol-pt RMSE** across 21 strikes live, 0.035 on synthetic ground truth. Bounds scale with the forward, so it works on rates and crypto alike | Python |
-| **[options-pricing-engine](https://github.com/6ixE11even/options-pricing-engine)** | European/American/barrier options via Black-Scholes, Monte Carlo, Crank-Nicolson FDM; projected SOR for early exercise | C++20 |
+| **[sofr-swap-pnl-attribution](https://github.com/tejaspandya9598/sofr-swap-pnl-attribution)** | SOFR curve bootstrap, $255M ten-swap 2–30y book, daily P&L split into carry / roll-down / level / slope / curvature via key-rate durations. Par swaps reprice to **<1e-9**, attribution reconciles to full revaluation | Python |
+| **[sabr-vol-calibration](https://github.com/tejaspandya9598/sabr-vol-calibration)** | SABR (Hagan) calibrated to live Deribit BTC smiles: **0.43 vol-pt RMSE** across 21 strikes live, 0.035 on synthetic ground truth. Bounds scale with the forward, so it works on rates and crypto alike | Python |
+| **[options-pricing-engine](https://github.com/tejaspandya9598/options-pricing-engine)** | European/American/barrier options via Black-Scholes, Monte Carlo, Crank-Nicolson FDM; projected SOR for early exercise | C++20 |
 
 ### ⚡ Market microstructure & low latency
 
 | Project | What it does | Stack |
 |---|---|---|
-| **[hft-matching-engine](https://github.com/6ixE11even/hft-matching-engine)** | Deterministic limit-order-book engine, O(1) insert/cancel/execute, zero-allocation memory pool. **~21M msgs/sec on an Apple M2, ~36M on Linux aarch64** — same silicon, and the gap is the point | C++20 |
-| **[lob-market-manipulation-detection](https://github.com/6ixE11even/lob-market-manipulation-detection)** | Spoofing/layering detection over 1.4M L2 events, 27 microstructure features, Isolation Forest + ECOD rank-averaged. The two rank at **0.865 Spearman** and overlap on 76% of each other's top 5% | Python · PyOD |
-| **[optimal-execution](https://github.com/6ixE11even/optimal-execution)** | Almgren-Chriss closed-form liquidation + cost/risk efficient frontier, impact and spread calibrated live from Deribit. A 10%-of-ADV order costs **7.7bps vs TWAP's 4.8** for **38% less variance** | Python |
+| **[hft-matching-engine](https://github.com/tejaspandya9598/hft-matching-engine)** | Deterministic limit-order-book engine, O(1) insert/cancel/execute, zero-allocation memory pool. **~21M msgs/sec on an Apple M2, ~36M on Linux aarch64** — same silicon, and the gap is the point | C++20 |
+| **[lob-market-manipulation-detection](https://github.com/tejaspandya9598/lob-market-manipulation-detection)** | Spoofing/layering detection over 1.4M L2 events, 27 microstructure features, Isolation Forest + ECOD rank-averaged. The two rank at **0.865 Spearman** and overlap on 76% of each other's top 5% | Python · PyOD |
+| **[optimal-execution](https://github.com/tejaspandya9598/optimal-execution)** | Almgren-Chriss closed-form liquidation + cost/risk efficient frontier, impact and spread calibrated live from Deribit. A 10%-of-ADV order costs **7.7bps vs TWAP's 4.8** for **38% less variance** | Python |
 
 ### 🔬 ML foundations & commodities
 
 | Project | What it does | Stack |
 |---|---|---|
-| **[ml-algorithms-from-scratch](https://github.com/6ixE11even/ml-algorithms-from-scratch)** | GBDT, random forest, SVM (both hinge sub-gradient and SciPy dual QP), logistic regression, PCA from first principles. Matches scikit-learn to four decimals on logistic, SVM and the decision tree; the forest lands 0.937 vs 0.958 | NumPy |
-| **[commodity_futures_settlement_price_analysis](https://github.com/6ixE11even/commodity_futures_settlement_price_analysis)** | WTI/Henry Hub settlement anomaly detection + term-structure dashboard. Twelve events across 2021–2025, all twelve corroborated by an independent Isolation Forest, over a 60-month front-month roll | Python · Streamlit |
+| **[ml-algorithms-from-scratch](https://github.com/tejaspandya9598/ml-algorithms-from-scratch)** | GBDT, random forest, SVM (both hinge sub-gradient and SciPy dual QP), logistic regression, PCA from first principles. Matches scikit-learn to four decimals on logistic, SVM and the decision tree; the forest lands 0.937 vs 0.958 | NumPy |
+| **[commodity_futures_settlement_price_analysis](https://github.com/tejaspandya9598/commodity_futures_settlement_price_analysis)** | WTI/Henry Hub settlement anomaly detection + term-structure dashboard. Twelve events across 2021–2025, all twelve corroborated by an independent Isolation Forest, over a 60-month front-month roll | Python · Streamlit |
 
 ---
 
