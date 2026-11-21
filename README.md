@@ -50,7 +50,7 @@ licence allows, so it runs offline.
 |---|---|---|
 | **[sofr-swap-pnl-attribution](https://github.com/tejaspandya9598/sofr-swap-pnl-attribution)** | Discount curve bootstrapped from FRED Treasury par yields (SOFR swap rates are licensed), a $255M ten-swap 2–30y book, and daily P&L split into carry, roll-down, level, slope and curvature via key-rate durations. Par swaps reprice to **<1e-9**. Historical CVA on 20,000 bootstrapped paths prices wrong-way risk at **16.9% of CVA** | Python |
 | **[sabr-vol-calibration](https://github.com/tejaspandya9598/sabr-vol-calibration)** | Hagan SABR calibrated to live Deribit BTC smiles: **0.43 vol-pt RMSE** across 21 strikes on the 18SEP26 expiry, 0.035 on synthetic ground truth with every parameter recovered. Bounds scale with the forward, so the same code fits rates and crypto | Python |
-| **[options-pricing-engine](https://github.com/tejaspandya9598/options-pricing-engine)** | European, American and barrier options by Black-Scholes, Monte Carlo and Crank-Nicolson finite differences, cross-checked within ~0.6%; projected SOR for early exercise; put-call parity and in + out = vanilla tested in CI | C++20 |
+| **[options-pricing-engine](https://github.com/tejaspandya9598/options-pricing-engine)** | European, American and barrier options by Black-Scholes, Monte Carlo and Crank-Nicolson finite differences, agreeing within 0.3%; projected SOR for early exercise; put-call parity and in + out = vanilla tested in CI | C++20 |
 
 ### ⚡ Market microstructure and low latency
 
