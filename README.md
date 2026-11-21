@@ -56,9 +56,16 @@ licence allows, so it runs offline.
 
 | Project | What it does | Stack |
 |---|---|---|
+| **[deribit-options-market-maker](https://github.com/tejaspandya9598/deribit-options-market-maker)** | Event-driven simulator that replays seven recorded days of Deribit BTC option books, trades and tickers with a latency queue each way and queue-aware fills. Four quoting strategies around SABR (recalibrated per expiry every 5 s) or Deribit's mark IV, four delta hedgers on the perpetual, and P&L split into spread, fees, 60 s adverse selection, option mark-to-market and hedge, reconciling to cash and positions within 3e-14 BTC. Tuned on two days, frozen, then run on five: **0 of 12** hedged accounts made money, and the unhedged gains are the 2.5% index rise. The same engine trades live on paper behind a local dashboard | C++20 · Python |
 | **[hft-matching-engine](https://github.com/tejaspandya9598/hft-matching-engine)** | Deterministic price-time-priority order book: O(1) cancels and executions, zero-allocation memory pool, 64-byte cache-aligned structures. **~21M msgs/sec on an Apple M2** over five million crossing limit orders, ~36M on Linux aarch64, ~10.7M through the lock-free pipeline | C++20 |
 | **[optimal-execution](https://github.com/tejaspandya9598/optimal-execution)** | Almgren-Chriss liquidation and its efficient frontier, calibrated from live Deribit data. A 10%-of-ADV order costs **7.5 bps against TWAP's 4.7** for **38% less risk** (standard deviation of cost). A policy-gradient agent trained on 207k real five-minute bars converges to the closed form, and neither beats TWAP out of sample | Python |
 | **[lob-market-manipulation-detection](https://github.com/tejaspandya9598/lob-market-manipulation-detection)** | Spoofing and layering detection over 1.4M Level-2 events with 27 cross-sectional and 13 temporal features, Isolation Forest and ECOD rank-averaged. The two agree at **0.865 Spearman** yet share only 76% of their top 5%. Unlabelled data, so no precision is claimed | Python · PyOD |
+
+### 🩺 Research
+
+| Project | What it does | Stack |
+|---|---|---|
+| **Clinical NLP screening of vaccine safety reports** (NYU Tandon research; team repository, not public) | Fine-tuned three clinical BERT-family encoders to screen physician-adjudicated VAERS narratives for transverse myelitis, benchmarked against keyword search, TF-IDF logistic regression and gradient boosting on the same grouped five-fold splits, with bootstrap intervals and paired comparisons. Showed that the physician's checklist fields inflate ROC-AUC by reusing the reviewer's own assessment, so the final model uses pre-review inputs only. Also a measles literature pilot with topic clustering. Co-author on **6 abstracts submitted to AAN 2027**; results stay unpublished until review | Python · PyTorch · Hugging Face |
 
 ### 🔬 ML foundations and commodities
 
@@ -81,4 +88,4 @@ licence allows, so it runs offline.
   <img src="https://img.shields.io/badge/Bloomberg-Terminal-000000?style=for-the-badge" alt="Bloomberg">
 </p>
 
-<p align="center"><i>Open to any full-time quant role from mid-2027: research, trading, development, risk, or quant analytics. US and India.</i></p>
+<p align="center"><i>Open to any full-time quant role from mid-2027: research, trading, development, risk, or quant analytics, in the US.</i></p>
